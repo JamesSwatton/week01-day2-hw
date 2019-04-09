@@ -5,9 +5,6 @@ require_relative('../river.rb')
 require_relative('../fish.rb')
 
 class RiverTest < MiniTest::Test
-  # A river should have a name e.g. "Amazon"
-  #
-  # A river should hold many fish
 
 def setup
   @fishes = [
@@ -18,8 +15,13 @@ def setup
   @river = River.new("Nile", @fishes)
 end
 
+  # A river should have a name e.g. "Amazon"
 def test_does_river_have_name
   assert_equal("Nile", @river.name)
 end
 
+# A river should hold many fish
+  def test_how_many_fish_in_river
+    assert_equal(3, @river.amount_of_fish)
+  end
 end

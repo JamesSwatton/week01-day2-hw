@@ -7,4 +7,8 @@ class River
     @fishes = fishes
   end
 
+  def amount_of_fish()
+    return @fishes.count
+  end
+
 end
