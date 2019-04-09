@@ -8,7 +8,7 @@ class Bear
     @belly = []
   end
 
-  def amount_of_fish_in_belly
+  def amount_of_fish_in_belly()
     return @belly.count
   end
 
@@ -18,6 +18,10 @@ class Bear
       @belly << river.fishes.pop
       count += 1
     end
+  end
+
+  def roar()
+    return "Rooaarr!"
   end
 
 end
