@@ -24,4 +24,10 @@ end
   def test_how_many_fish_in_river
     assert_equal(3, @river.amount_of_fish)
   end
+
+  # A river could trigger spawning (fish having babies)
+  def test_to_see_if_river_can_spawn_fish
+    @river.spawn_fish("Bob")
+    assert_equal(4, @river.amount_of_fish)
+  end
 end

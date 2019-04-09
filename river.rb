@@ -11,4 +11,9 @@ class River
     return @fishes.count
   end
 
+  def spawn_fish(name)
+    if @fishes.count >= 2
+      @fishes << Fish.new(name)
+    end
+  end
 end
