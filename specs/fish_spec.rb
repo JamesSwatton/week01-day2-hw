@@ -8,9 +8,9 @@ class FishTest < MiniTest::Test
 
 # A fish should have a name
 
-# def test_does_fish_have_name
-#   fish = Fish.new("Nemo")
-#   assert_equal("Nemo", fish.name)
-# end
+def test_does_fish_have_name
+  fish = Fish.new("Nemo")
+  assert_equal("Nemo", fish.name)
+end
 
 end
